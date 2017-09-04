@@ -1,0 +1,672 @@
+%implements s4_b0_3opym_TLCInterface "C"
+
+%function getOutputAddr_3_2_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_0_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_0_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_0_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_0_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_0_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_0_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_3_2_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.MyoSFunction_IWORK"
+%endfunction
+
+%function getDWork_3_2_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.MyoSFunction_IWORK"
+%endfunction
+
+%function getDWorkAddr_3_2_1_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.MyoSFunction_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_3_2_1_0_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.MyoSFunction_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_3_2_1_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.MyoSFunction_P1"
+%endfunction
+
+%function getParam_3_2_1_0_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.MyoSFunction_P1"
+%endfunction
+
+%function getParamAddr_3_2_1_0_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.MyoSFunction_P2"
+%endfunction
+
+%function getParam_3_2_1_0_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.MyoSFunction_P2"
+%endfunction
+
+%function getInputAddr_3_12_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.Saturation"
+%endfunction
+
+%function getInput_3_12_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.Saturation"
+%endfunction
+
+%function getDWorkAddr_3_12_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_3_12_1_0_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.Scope_PWORK"
+%endfunction
+
+%function getOutputAddr_3_2_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_2_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_2_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_2_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_2_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_2_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_2_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_2_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_2_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_3_2_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.MyoSFunction_IWORK"
+%endfunction
+
+%function getDWork_3_2_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.MyoSFunction_IWORK"
+%endfunction
+
+%function getDWorkAddr_3_2_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.MyoSFunction_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_3_2_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.MyoSFunction_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_3_2_1_2_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.MyoSFunction_P1"
+%endfunction
+
+%function getParam_3_2_1_2_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.MyoSFunction_P1"
+%endfunction
+
+%function getParamAddr_3_2_1_2_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.MyoSFunction_P2"
+%endfunction
+
+%function getParam_3_2_1_2_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.MyoSFunction_P2"
+%endfunction
+
+%function getInputAddr_3_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(17, 0)> %% rtb_Unbuffer6
+
+%return "&rtb_Unbuffer6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(17, 0)> %% rtb_Unbuffer6
+
+%return "rtb_Unbuffer6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(26, 0)> %% rtb_Skew
+
+%return "&rtb_Skew" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_3_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(26, 0)> %% rtb_Skew
+
+%return "rtb_Skew" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_5_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(17, 0)> %% rtb_Unbuffer6
+
+%return "&rtb_Unbuffer6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_5_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(17, 0)> %% rtb_Unbuffer6
+
+%return "rtb_Unbuffer6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_5_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(26, 0)> %% rtb_Skew
+
+%return "&rtb_Skew" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_5_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(26, 0)> %% rtb_Skew
+
+%return "rtb_Skew" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_7_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0)> %% rtb_y
+
+%return "&rtb_y" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_7_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(14, 0)> %% rtb_y
+
+%return "rtb_y" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_7_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.InterpretedMATLABFunction" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_7_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.InterpretedMATLABFunction" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_9_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(16, 0)> %% rtb_TmpSignalConversionAtVRSink
+
+%return "&rtb_TmpSignalConversionAtVRSink" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_9_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(16, 0)> %% rtb_TmpSignalConversionAtVRSink
+
+%return "rtb_TmpSignalConversionAtVRSink" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_9_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.Assignment" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_9_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.Assignment" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_9_1_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(19, 0)> %% rtb_TmpSignalConversionAtVRSi_p
+
+%return "&rtb_TmpSignalConversionAtVRSi_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_9_1_2_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(19, 0)> %% rtb_TmpSignalConversionAtVRSi_p
+
+%return "rtb_TmpSignalConversionAtVRSi_p" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_3_9_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.VRSink_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_3_9_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.VRSink_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_12_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.Saturation"
+%endfunction
+
+%function getInput_3_12_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.Saturation"
+%endfunction
+
+%function getDWorkAddr_3_12_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.Scope_PWORK"
+%endfunction
+
+%function getDWork_3_12_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.Scope_PWORK"
+%endfunction
+
+%function getInputAddr_3_13_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(22, 0)> %% rtb_Unbuffer5
+
+%return "&rtb_Unbuffer5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_13_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(22, 0)> %% rtb_Unbuffer5
+
+%return "rtb_Unbuffer5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_13_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(28, 0)> %% rtb_Product_g
+
+%return "&rtb_Product_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_13_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(28, 0)> %% rtb_Product_g
+
+%return "rtb_Product_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_14_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(29, 0)> %% rtb_Transpose1
+
+%return "&rtb_Transpose1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_14_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(29, 0)> %% rtb_Transpose1
+
+%return "rtb_Transpose1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_14_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(11, 0)> %% rtb_Transpose
+
+%return "&rtb_Transpose" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_14_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(11, 0)> %% rtb_Transpose
+
+%return "rtb_Transpose" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_15_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(23, 0)> %% rtb_Unbuffer4
+
+%return "&rtb_Unbuffer4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_15_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(23, 0)> %% rtb_Unbuffer4
+
+%return "rtb_Unbuffer4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_15_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(29, 0)> %% rtb_Transpose1
+
+%return "&rtb_Transpose1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_15_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(29, 0)> %% rtb_Transpose1
+
+%return "rtb_Transpose1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_16_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(28, 0)> %% rtb_Product_g
+
+%return "&rtb_Product_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_16_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(28, 0)> %% rtb_Product_g
+
+%return "rtb_Product_g" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_16_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(12, 0)> %% rtb_Transpose_b
+
+%return "&rtb_Transpose_b" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_16_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(12, 0)> %% rtb_Transpose_b
+
+%return "rtb_Transpose_b" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_18_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "&rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_18_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_18_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "&rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_18_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_19_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "&rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_19_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInputAddr_3_19_1_2_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "&rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getInput_3_19_1_2_0_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(30, 0)> %% rtb_Transpose_l
+
+%return "rtb_Transpose_l" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_19_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(31, 0)> %% rtb_Sum
+
+%return "&rtb_Sum"
+%endfunction
+
+%function getOutput_3_19_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+%<SLibCGIRAccessLocalVar(31, 0)> %% rtb_Sum
+
+%return "rtb_Sum"
+%endfunction
+
+%function getDWorkAddr_3_22_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.RealTimeSynchronization_PWORK"
+%endfunction
+
+%function getDWork_3_22_1_2_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.RealTimeSynchronization_PWORK"
+%endfunction
+
+%function getParamAddr_3_22_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.RealTimeSynchronization_MaxMiss"
+%endfunction
+
+%function getParam_3_22_1_2_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.RealTimeSynchronization_MaxMiss"
+%endfunction
+
+%function getParamAddr_3_22_1_2_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.RealTimeSynchronization_YieldWh"
+%endfunction
+
+%function getParam_3_22_1_2_1_1(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.RealTimeSynchronization_YieldWh"
+%endfunction
+
+%function getOutputAddr_3_2_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o1" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o2" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_5_2_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o3" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_5_3_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o4" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_5_4_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o5" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_5_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_5_5_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o6" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutputAddr_3_2_1_5_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_B.MyoSFunction_o7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getOutput_3_2_1_5_6_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_B.MyoSFunction_o7" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWorkAddr_3_2_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.MyoSFunction_IWORK"
+%endfunction
+
+%function getDWork_3_2_1_5_0_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.MyoSFunction_IWORK"
+%endfunction
+
+%function getDWorkAddr_3_2_1_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_DW.MyoSFunction_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getDWork_3_2_1_5_1_0(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_DW.MyoSFunction_PWORK" + SLibCG_ArrayIndexer(ucv, lcv, sigIdx)
+%endfunction
+
+%function getParamAddr_3_2_1_5_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.MyoSFunction_P1"
+%endfunction
+
+%function getParam_3_2_1_5_1_5(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.MyoSFunction_P1"
+%endfunction
+
+%function getParamAddr_3_2_1_5_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "&hmiTest_P.MyoSFunction_P2"
+%endfunction
+
+%function getParam_3_2_1_5_1_7(opaqueBlock, block, lcv, ucv, sigIdx, reim) void
+
+%return "hmiTest_P.MyoSFunction_P2"
+%endfunction
+

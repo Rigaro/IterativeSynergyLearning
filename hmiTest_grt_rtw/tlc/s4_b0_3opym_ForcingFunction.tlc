@@ -1,0 +1,30 @@
+%implements s4_b0_3opym_ForcingFunction "C"
+
+%function ForcingFunction(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+XDot_hmiTest_T *_rtXdot;
+%closefile localVarDecl
+_rtXdot = %<(SLibCG_SE(SLibGetContStatesDerivativeStructPtr()))>;
+/* ForcingFunction for TransferFcn: '<S10>/Transfer Fcn1' */
+_rtXdot->TransferFcn1_CSTATE = 0.0;
+_rtXdot->TransferFcn1_CSTATE += hmiTest_P.TransferFcn1_A * hmiTest_X.TransferFcn1_CSTATE;
+_rtXdot->TransferFcn1_CSTATE += hmiTest_B.Abs;
+/* ForcingFunction for TransferFcn: '<S10>/Transfer Fcn' */
+_rtXdot->TransferFcn_CSTATE = 0.0;
+_rtXdot->TransferFcn_CSTATE += hmiTest_P.TransferFcn_A * hmiTest_X.TransferFcn_CSTATE;
+_rtXdot->TransferFcn_CSTATE += hmiTest_B.Abs1;
+%closefile cfgTxt
+%<cfgTxt>
+%<LibSetSystemField(system, "CachedForcingFunctionLocalVars", localVarDecl)>
+%endfunction
+%function ForcingFunctionFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void ForcingFunction(\
+%assign comma = ""
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(1, 4, fcnProtoType)>
+%endfunction

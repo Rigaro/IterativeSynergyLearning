@@ -18,12 +18,12 @@ alphaH(i) = 0;            % Historic alpha data
 % JH(i) = 10000;            % Historic cost data
 
 % Simulink initialization
-% cs = getActiveConfigSet('sim2DOFArmSynergySimulink');
+% cs = getActiveConfigSet('sim2DOFArmSynergyTemplate');
 % model_cs = cs.copy;
-% simOut = sim('sim2DOFArmSynergySimulink', model_cs); % First run
-cs = getActiveConfigSet('hmi2DOFArmSynergySimulink');
+% simOut = sim('sim2DOFArmSynergyTemplate', model_cs); % First run
+cs = getActiveConfigSet('hil2DOFArmSynergyTemplate');
 model_cs = cs.copy;
-simOut = sim('hmi2DOFArmSynergySimulink', model_cs); % First run
+simOut = sim('hil2DOFArmSynergyTemplate', model_cs); % First run
 
 % Run test
 runTest

@@ -1,0 +1,59 @@
+%implements s4_b0_3opym_0_Start "C"
+
+%function Start(block, system) Output
+%assign cfgTxt = ""
+%openfile cfgTxt
+%assign localVarDecl = ""
+%openfile localVarDecl
+cell_wrap_hmiTest_T varSizes;
+int32_T i;
+%closefile localVarDecl
+/* Start for MATLABSystem: '<S10>/Moving Average' */
+localDW->obj.isInitialized = 0;
+localDW->obj.NumChannels = -1;
+localDW->objisempty = true;
+localDW->obj.isInitialized = 1;
+varSizes.f1[0] = 1U;
+varSizes.f1[1] = 1U;
+for (i = 0; i < 6; i++) {
+    varSizes.f1[i + 2] = 1U;
+}
+localDW->obj.inputVarSize = varSizes;
+localDW->obj.NumChannels = 1;
+localDW->gobj_0.isInitialized = 0;
+localDW->obj.pStatistic = &localDW->gobj_0;
+localDW->obj.TunablePropsChanged = false;
+/* End of Start for MATLABSystem: '<S10>/Moving Average' */
+%closefile cfgTxt
+%<cfgTxt>
+%assign rtmArgSys = ::CompiledModel.System[::CompiledModel.System[::CompiledModel.RTWCGModules.RTWCGModule[0].CGSystemIdx].NonInlinedParentSystemIdx]
+%if SysFcnArgNeeded("Start", rtmArgSys.Interface.RTMArgDef, rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Start"))
+%<SLibCG_AccessArg(0, 1, 0)>
+%endif
+%if SLibCG_ArgAccessed(0, 1, 0)
+%<SLibAccessArg(rtmArgSys.Interface.RTMArgDef, "Start", rtmArgSys.CurrentTID, FcnSysModuleIsRateGrouping(rtmArgSys, "Start"))>
+%endif
+%if (IsModelReferenceBaseSys(rtmArgSys) && (IsModelRefScalableBuild() || GenerateClassInterface)) ||...
+(GenerateClassInterface && SLibIsMultiInstanceServer(rtmArgSys))
+%<SLibCG_UndoAccessArg(0, 1, 0)>
+%endif
+%<LibSetSystemField(system, "CachedStartLocalVars", localVarDecl)>
+%endfunction
+%function StartFcnProtoType(block, system) Output
+%assign fcnProtoType = ""
+%openfile fcnProtoType
+static void hmiTest_MovingAverage_Start(\
+%assign comma = ""
+%if SLibCG_ArgAccessed(0, 1, 0)
+%<comma>%<tSimStructType> * const %<tSimStruct>\
+%assign comma = ", "
+%endif
+%if SLibCG_ArgAccessed(0, 1, 1)
+%<comma>real_T rtu_0\
+%assign comma = ", "
+%endif
+%<comma>DW_MovingAverage_hmiTest_T *localDW\
+%assign comma = ", "
+%closefile fcnProtoType
+%<SLibCG_SetFcnProtoType(0, 1, fcnProtoType)>
+%endfunction
