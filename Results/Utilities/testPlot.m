@@ -24,7 +24,7 @@ xlabel('sample');
 ylabel('q_e (rad)');
 % Plot pf(i)
 figure(5);
-plot(pfH(1,:),pfH(2,:),'x');
+plot(pH(1,:),pH(2,:),'x');
 hold on
 plot(p_f(1),p_f(2),'ro');
 hold off
