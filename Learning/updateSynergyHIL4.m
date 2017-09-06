@@ -1,5 +1,5 @@
-h = 0.5;
-gamma = 2;
+h = 0.01;
+gamma = 10;
 if(i<2)
     deltaH(i) = 0;
 else
@@ -10,7 +10,8 @@ if(deltaH(i)>10)
 elseif(deltaH(i)<-10)
     deltaH(i) = -10;
 end
-alpha = alphaH(i,:) - gamma*deltaH(i);     % 2 for low qs variation
+alpha = alphaH(i,:) + gamma*deltaH(i);     % 2 for low qs variation
 i = i + 1;
-% i
+i
+alpha
 alphaH(i,:) = alpha;
