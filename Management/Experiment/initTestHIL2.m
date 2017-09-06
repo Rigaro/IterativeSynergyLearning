@@ -1,6 +1,7 @@
 clear all
 % Initialization
 i = 1;                    % Iteration number
+iMax = 2;
 
 % Hand realted
 % pH(:,1) = p(:,:,end);   % Historic position data
