@@ -1,15 +1,19 @@
 % Plot alpha values
 figure(1);
-plot(alphaH);
+% hold on
+plot(thetaH);
 title('Synergy gain v. iteration');
 xlabel('iteration');
-ylabel('\alpha');
+ylabel('\theta');
+% hold off
 % Plot cost values
 figure(2);
+% hold on
 plot(JH);
 title('Cost v. iteration');
 xlabel('iteration');
-ylabel('Cost');
+ylabel('J');
+% hold off
 % Plot q_s
 figure(3);
 plot(simOut.q_s);
@@ -23,24 +27,25 @@ title('Sample elbow trajectory');
 xlabel('sample');
 ylabel('q_e (rad)');
 % Plot pf(i)
+for j=1:length(xPosH)
+    xEnd(j) = xPosH(j,end);
+    yEnd(j) = yPosH(j,end);
+    zEnd(j) = zPosH(j,end);
+end
 figure(5);
-plot(pH(1,:),pH(2,:),'x');
+plot3(xEnd,zEnd,yEnd,'x');
 hold on
-plot(p_f(1),p_f(2),'ro');
+plot3(p_f(1),p_f(3),p_f(2),'ro');
 hold off
 title('Hand end positions');
 xlabel('x (m)');
 ylabel('y (m)');
 % Plot sample p
-for j=1:length(simOut.tout)
-    xPos(j) = simOut.p(1,1,j);
-    yPos(j) = simOut.p(2,1,j);
-end
-figure(6);
-plot(xPos,yPos);
-hold on
-plot(p_f(1),p_f(2),'ro');
-hold off
-title('Sample hand trajectory');
-xlabel('x (m)');
-ylabel('y (m)');
+% figure(6);
+% plot(xPos,yPos);
+% hold on
+% plot(p_f(1),p_f(2),'ro');
+% hold off
+% title('Sample hand trajectory');
+% xlabel('x (m)');
+% ylabel('y (m)');
