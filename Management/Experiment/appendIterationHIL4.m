@@ -18,4 +18,5 @@ q_rH(:,i) = simOut.q_s(:,3);
 q_eH(:,i) = simOut.q_e(:,1);        % Historic elbow position data
 % end
 % Learning realted
-JH(i) = cost(p_f,pfH(:,i));            % Historic cost data
+JH(i) = 1*costDist(p_f,pfH(:,i))+(1e-5)*costJerk(simOut.tout',simOut.jerk);  
+% JH(i) = 1*costDist(p_f,pfH(:,i));            % Historic cost data
