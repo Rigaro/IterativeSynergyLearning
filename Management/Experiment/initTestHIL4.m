@@ -1,4 +1,4 @@
-% clear all
+clear all
 % Initialization
 i = 1;                    % Iteration number
 iMax = 50;
@@ -17,9 +17,11 @@ wDither = [0.8*pi,pi,0.6*pi];
 % sgn = [1,1,1];
 
 % Simulink initialization
-cs = getActiveConfigSet('hil4DOFArmSynergyTemplate');
+% cs = getActiveConfigSet('hil4DOFArmSynergyTemplate');
+cs = getActiveConfigSet('hil4DOFArmShared');
 model_cs = cs.copy;
-simOut = sim('hil4DOFArmSynergyTemplate', model_cs); % First run
+% simOut = sim('hil4DOFArmSynergyTemplate', model_cs); % First run
+simOut = sim('hil4DOFArmShared', model_cs); % First run
 
 % Run test
 runTest
