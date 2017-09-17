@@ -5,6 +5,7 @@ else
     %%%%%% Gradient estimation %%%%%%
     % High pass filter
     JhpfH(i) = -(h*JhpfH(i-1))+(JH(i)-JH(i-1));
+%     JhpfH(i) = JH(i);
     % Estimation dither
     for j=1:3        
         grad(j) = aDither(j)*cos(wDither(j)*i)*JhpfH(i);

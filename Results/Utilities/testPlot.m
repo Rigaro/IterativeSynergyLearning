@@ -16,13 +16,17 @@ ylabel('J');
 % hold off
 % Plot q_s
 figure(3);
-plot(simOut.q_s);
+hold on
+plot(q_aH(:,70));
+plot(q_fH(:,70));
+plot(q_rH(:,70));
 title('Sample shoulder trajectory');
 xlabel('sample');
 ylabel('q_s (rad)');
+hold off
 % Plot q_e
 figure(4);
-plot(simOut.q_e);
+plot(q_eH(:,70));
 title('Sample elbow trajectory');
 xlabel('sample');
 ylabel('q_e (rad)');
@@ -48,4 +52,13 @@ ylabel('y (m)');
 % hold off
 % title('Sample hand trajectory');
 % xlabel('x (m)');
-% ylabel('y (m)');
+% ylabel('y (m)');% Plot cost values
+figure(6);
+% hold on
+plot(dist);
+title('Cost v. iteration');
+xlabel('iteration');
+ylabel('J');
+hold on;
+plot(jerk);
+hold off

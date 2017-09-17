@@ -5,6 +5,6 @@ while(i<=iMax)
     updateSynergyHIL4ES
 %     set_param('sim2DOFArmSynergyTemplate','SimulationCommand','start');
 %     simOut = sim('hil2DOFArmSynergyTemplate', model_cs);
-%     simOut = sim('hil4DOFArmSynergyTemplate', model_cs);
-    simOut = sim('hil4DOFArmShared', model_cs);
+    simOut = sim('hil4DOFArmSynergyTemplate', model_cs);
+%     simOut = sim('hil4DOFArmShared', model_cs);
 end
