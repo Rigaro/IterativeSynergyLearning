@@ -1,7 +1,7 @@
-% clear all
+clear all
 % Initialization
-i = 50;                    % Iteration number
-iMax = 75;
+i = 1;                    % Iteration number
+iMax = 25;
 % Hand realted
 p_f = [0.5969;-0.0670;-0.2];   % Desired end position: length, height, centering
 
@@ -12,9 +12,9 @@ h = 0.001;
 aDither = [0.1,0.1,0.1];
 wDither = [0.8*pi,pi,0.6*pi];
 %
-% theta = [0,0,0];
-% thetaH(i,:) = theta;            % Historic alpha data
-% v(i) = 0;
+theta = [0,0,0];
+thetaH(i,:) = theta;            % Historic alpha data
+v(i) = 0;
 
 % Simulink initialization
 cs = getActiveConfigSet('hil4DOFArmSynergyTemplate');
