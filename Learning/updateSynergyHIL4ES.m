@@ -1,22 +1,22 @@
 if(i<2)
-    JhpfH(i) = 0;
+    v(i) = 0;
     i = i + 1;
 else
     %%%%%% Gradient estimation %%%%%%
     % High pass filter
-    JhpfH(i) = -(h*JhpfH(i-1))+(JH(i)-JH(i-1));
-%     JhpfH(i) = JH(i);
+    v(i) = -(h*v(i-1))+(JH(i)-JH(i-1));
+    
     % Estimation dither
     for j=1:3        
-        grad(j) = aDither(j)*cos(wDither(j)*i)*JhpfH(i);
+        gradJ(j) = aDither(j)*cos(wDither(j)*i)*v(i);
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     %%%%%% Gradient descent %%%%%%%%%
     % Gradient
-    theta = thetaH(i,:) + gamma*grad;
+    theta = thetaH(i,:) + gamma*gradJ;
     % Gradient dither
     for j=1:3
-        theta = theta + aDither(j)*cos(wDither(j)*i);
+        theta(j) = theta(j) + aDither(j)*cos(wDither(j)*i);
     end
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
     i = i + 1;
