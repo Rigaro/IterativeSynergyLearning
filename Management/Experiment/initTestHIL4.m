@@ -8,13 +8,13 @@ p_f = [0.5969;-0.0670;-0.2];   % Desired end position: length, height, centering
 % Learning realted
 % Set initial synergy
 gamma = 30;
-h = 0;
+h = 0.001;
 aDither = [0.1,0.1,0.1];
 wDither = [0.8*pi,pi,0.6*pi];
 %
 % theta = [0,0,0];
 % thetaH(i,:) = theta;            % Historic alpha data
-% JhpfH(i) = 0;
+% v(i) = 0;
 
 % Simulink initialization
 cs = getActiveConfigSet('hil4DOFArmSynergyTemplate');
