@@ -9,10 +9,18 @@ yPosH(:,i) = simOut.p(:,2);
 zPosH(:,i) = simOut.p(:,3);
 % 
 % Joint related
-% 
-q_aH(:,i) = simOut.q_s(:,1);        % Historic shoulder position data
-q_fH(:,i) = simOut.q_s(:,2);
-q_rH(:,i) = simOut.q_s(:,3);
+%
+q_1H(:,i) = simOut.q_s(:,1);        % Historic shoulder position data (sensor frame)
+q_2H(:,i) = simOut.q_s(:,2);
+q_3H(:,i) = simOut.q_s(:,3);
+qDot_aH(:,i) = simOut.qDot_s(:,1,:);        % Historic shoulder velocity data
+qDot_fH(:,i) = simOut.qDot_s(:,2,:);
+qDot_rH(:,i) = simOut.qDot_s(:,3,:);
+% Numerically integrate position
+t_s = (simOut.tout(end)/length(qDot_aH(:,i)))*(0:250);
+q_aH(:,i) = cumtrapz(t_s,qDot_aH(:,i));
+q_fH(:,i) = cumtrapz(t_s,qDot_fH(:,i));
+q_rH(:,i) = cumtrapz(t_s,qDot_rH(:,i));
 % 
 %
 q_eH(:,i) = simOut.q_e(:,1);        % Historic elbow position data
