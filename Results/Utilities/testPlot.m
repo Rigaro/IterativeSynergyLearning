@@ -4,6 +4,7 @@ hold on
 plot(thetaH);
 title('Synergy parameter v. iteration');
 xlabel('Iteration');
+% ylabel('$\dot{q}_{e}$','Interpreter','latex');
 ylabel('\theta');
 hold off
 % Plot cost values
@@ -18,9 +19,9 @@ hold off
 figure(3);
 hold on
 t_s = 0.02*(0:250);
-plot(t_s,q_aH(:,70));
-plot(t_s,q_fH(:,70));
-plot(t_s,q_rH(:,70));
+plot(t_s,q_aH(:,20));
+plot(t_s,q_fH(:,20));
+plot(t_s,q_rH(:,20));
 title('Sample shoulder trajectory');
 xlabel('Time (sec)');
 ylabel('q_s (rad)');
@@ -29,7 +30,7 @@ hold off
 figure(4);
 hold on
 t_e = 0.005*(0:1000);
-plot(t_e,q_eH(:,70));
+plot(t_e,q_eH(:,20));
 title('Sample elbow trajectory');
 xlabel('Time (sec)');
 ylabel('q_e (rad)');

@@ -21,6 +21,14 @@ else
 %     end
     theta = theta + aDither.*cos(wDither*i);
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+    % Projection
+    for j=1:length(theta)
+        if(theta(j)>1)
+            theta(j) = 1;
+        elseif (theta(j)<-1.2)
+            theta(j) = -1.2;
+        end
+    end
     i = i + 1;
 end
 % i
